@@ -1,5 +1,8 @@
 import Entites.*;
+import View.AgenceForm;
+import View.PersonneForm;
 
+import javax.swing.*;
 import java.util.Date;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -66,5 +69,14 @@ public class Main {
         System.out.println(P3);
         System.out.println(P4);
         System.out.println(P5);
+
+
+            SwingUtilities.invokeLater(() -> {
+                new PersonneForm().setVisible(true);
+            });
+            AgenceForm form = new AgenceForm();
+            form.setVisible(true);
+        }
     }
-}
+
+

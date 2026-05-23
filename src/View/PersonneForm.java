@@ -69,10 +69,5 @@ public class PersonneForm extends JFrame {
         p.add(textField, c);
     }
 
-    public static void main(String[] args) {
-        // Lancement de l'interface
-        SwingUtilities.invokeLater(() -> {
-            new PersonneForm().setVisible(true);
-        });
+
     }
-}
